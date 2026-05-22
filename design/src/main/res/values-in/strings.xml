@@ -1,0 +1,360 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="PluralsCandidate">
+    <string name="launch_name_meta">Bromo VPN</string>
+    <string name="launch_name_alpha">Bromo VPN Alpha</string>
+    <string name="application_name_meta">Bromo VPN</string>
+    <string name="application_name_alpha">Bromo VPN Alpha</string>
+
+    <string name="stopped">Berhenti</string>
+    <string name="tap_to_start">Ketuk untuk memulai</string>
+    <string name="running">Berjalan</string>
+    <string name="format_traffic_forwarded">%s Diteruskan</string>
+
+    <string name="proxy">Proksi</string>
+    <string name="direct_mode">Mode Langsung</string>
+    <string name="rule_mode">Mode Aturan</string>
+    <string name="global_mode">Mode Global</string>
+    <string name="proxy_empty_tips">Tidak ada grup yang dapat ditampilkan</string>
+
+    <string name="profiles">Profil</string>
+    <string name="not_selected">Tidak dipilih</string>
+    <string name="format_profile_activated">%s Diaktifkan</string>
+
+    <string name="logs">Log</string>
+    <string name="settings">Pengaturan</string>
+    <string name="help">Bantuan</string>
+    <string name="about">Tentang</string>
+
+    <string name="copied">Disalin</string>
+
+    <string name="recently">Baru-baru ini</string>
+
+    <string name="format_minutes">%d mnt</string>
+    <string name="format_elements">%d elemen</string>
+
+    <string name="format_minutes_ago">%d mnt yang lalu</string>
+    <string name="format_hours_ago">%d jam yang lalu</string>
+    <string name="format_days_ago">%d hari yang lalu</string>
+    <string name="format_months_ago">%d bulan yang lalu</string>
+    <string name="format_years_ago">%d tahun yang lalu</string>
+
+    <string name="create_profile">Buat Profil</string>
+    <string name="file">Berkas</string>
+    <string name="import_from_file">Impor dari Berkas</string>
+    <string name="url">URL</string>
+    <string name="qr" translatable="false">QR Code</string>
+    <string name="import_from_url">Impor dari URL</string>
+    <string name="import_from_qr">Impor dari Kode QR</string>
+    <string name="external">Eksternal</string>
+    <string name="format_type_unsaved">%s (Belum Disimpan)</string>
+
+    <string name="application_broken">Aplikasi Rusak</string>
+    <string name="application_crashed">Aplikasi Hancur</string>
+    <string name="application_broken_tips">Aplikasi kekurangan komponen runtime yang diperlukan, biasanya disebabkan oleh mengunduh apk yang tidak lengkap.</string>
+    <string name="reinstall">Instal ulang</string>
+    <string name="github_releases">Rilis Github</string>
+
+    <string name="profile">Profil</string>
+    <string name="name">Nama</string>
+    <string name="profile_name">Nama Profil</string>
+    <string name="profile_url">URL Profil</string>
+    <string name="auto_update">Pembaruan Otomatis</string>
+    <string name="auto_update_minutes">Pembaruan Otomatis (Menit)</string>
+
+    <string name="accept_http_content">Hanya terima http(s)</string>
+    <string name="at_least_15_minutes">Minimal 15 menit atau kosong</string>
+    <string name="should_not_be_blank">Tidak boleh kosong</string>
+    <string name="detail">Detail</string>
+    <string name="update">Perbarui</string>
+    <string name="edit">Ubah</string>
+    <string name="delete">Hapus</string>
+    <string name="export">Ekspor</string>
+    <string name="import_">Impor</string>
+    <string name="properties">Properti</string>
+    <string name="duplicate">Duplikat</string>
+    <string name="active_unsaved_tips">Profil harus disimpan sebelum diaktifkan</string>
+
+    <string name="exit_without_save">Keluar Tanpa Menyimpan</string>
+    <string name="exit_without_save_warning">Semua perubahan akan *HILANG*</string>
+
+    <string name="raw_cn" translatable="false">cn</string>
+    <string name="disabled">Dinonaktifkan</string>
+    <string name="unavailable">Tidak tersedia</string>
+    <string name="empty_name">Nama Kosong</string>
+    <string name="invalid_url">URL Tidak Valid</string>
+    <string name="loading">Memuat</string>
+
+    <string name="format_fetching_configuration">Mengambil konfigurasi dari \'%s\'</string>
+    <string name="format_fetching_provider">Mengambil penyedia \'%s\'</string>
+    <string name="initializing">Menginisialisasi</string>
+    <string name="verifying">Memverifikasi</string>
+
+    <string name="new_profile">Profil Baru</string>
+
+    <string name="delay">Penundaan</string>
+    <string name="sort">Urutkan</string>
+    <string name="default_">Default</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Batal</string>
+    <string name="reset">Atur Ulang</string>
+
+    <string name="clash_logcat">Clash Logcat</string>
+    <string name="history">Riwayat</string>
+    <string name="logcat">Logcat</string>
+
+    <string name="delete_all_logs">Hapus Semua Log</string>
+    <string name="delete_all_logs_warn">Semua riwayat log akan *HILANG*</string>
+    <string name="file_exported">Berkas Diekspor</string>
+
+    <string name="behavior">Perilaku</string>
+    <string name="network">Jaringan</string>
+    <string name="interface_">Antarmuka</string>
+    <string name="override">Pengambilalihan</string>
+
+    <string name="auto_restart">Mulai Ulang Otomatis</string>
+    <string name="allow_clash_auto_restart">Izinkan clash memulai ulang otomatis</string>
+
+    <string name="route_system_traffic">Rute Lalu Lintas Sistem</string>
+    <string name="routing_via_vpn_service">Merutekan lalu lintas sistem secara otomatis melalui VpnService</string>
+
+    <string name="vpn_service_options">Opsi VpnService</string>
+    <string name="bypass_private_network">Lewati Jaringan Pribadi</string>
+    <string name="bypass_private_network_summary">Lewati alamat jaringan pribadi</string>
+    <string name="dns_hijacking">Pembajakan DNS</string>
+    <string name="dns_hijacking_summary">Tangani semua paket dns</string>
+    <string name="block_loopback">Blokir Loopback</string>
+    <string name="block_loopback_summary">Blokir koneksi loopback</string>
+    <string name="allow_bypass">Izinkan Bypass</string>
+    <string name="allow_bypass_summary">Izinkan semua aplikasi melewati koneksi VPN ini</string>
+    <string name="allow_ipv6">Izinkan IPv6</string>
+    <string name="allow_ipv6_summary">Izinkan lalu lintas ipv6 melalui VpnService</string>
+    <string name="system_proxy">Proksi Sistem</string>
+    <string name="system_proxy_summary">Lampirkan proksi http ke VpnService</string>
+    <string name="access_control_mode">Mode Kontrol Akses</string>
+    <string name="access_control_packages">Paket Kontrol Akses</string>
+    <string name="access_control_packages_summary">Konfigurasi izin akses untuk aplikasi</string>
+
+    <string name="options_unavailable">Opsi Tidak Tersedia sampai Clash Berhenti</string>
+
+    <string name="general">Umum</string>
+    <string name="dns">DNS</string>
+    <string name="prefer_h3">Utamakan h3</string>
+    <string name="http_port">Port HTTP</string>
+    <string name="socks_port">Port Socks</string>
+    <string name="redirect_port">Port Redirect</string>
+    <string name="mixed_port">Port Campuran</string>
+    <string name="tproxy_port">Port TProxy</string>
+    <string name="authentication">Autentikasi</string>
+    <string name="allow_lan">Izinkan LAN</string>
+    <string name="bind_address">Alamat Ikat</string>
+    <string name="mode">Mode</string>
+    <string name="log_level">Tingkat Log</string>
+    <string name="ipv6">IPv6</string>
+    <string name="external_controller">Pengontrol Eksternal</string>
+    <string name="external_controller_tls">TLS Pengontrol Eksternal</string>
+    <string name="allow_origins">Asal yang Diizinkan Pengontrol Eksternal</string>
+    <string name="allow_private_network">Jaringan Pribadi yang Diizinkan Pengontrol Eksternal</string>
+    <string name="secret">Rahasia</string>
+    <string name="hosts">Host</string>
+    <string name="_new">New</string>
+    <string name="value">Nilai</string>
+
+    <string name="strategy">Strategi</string>
+    <string name="listen">Dengar</string>
+    <string name="append_system_dns">Tambahkan DNS Sistem</string>
+    <string name="use_hosts">Gunakan Host</string>
+    <string name="enhanced_mode">Mode Ditingkatkan</string>
+    <string name="name_server">Server Nama</string>
+    <string name="fallback">Server Nama Cadangan</string>
+    <string name="default_name_server">Server Nama Bawaan</string>
+    <string name="fakeip_filter">Filter Fake-IP</string>
+    <string name="fakeip_filter_mode">Mode Filter Fake-IP</string>
+    <string name="geoip_fallback">GeoIP Cadangan</string>
+    <string name="geoip_fallback_code">Kode GeoIP Cadangan</string>
+    <string name="ipcidr_fallback">IPCIDR Cadangan</string>
+    <string name="domain_fallback">Domain Cadangan</string>
+    <string name="name_server_policy">Kebijakan Server Nama</string>
+
+    <string name="dont_modify">Jangan ubah</string>
+    <string name="empty">Kosong</string>
+
+    <string name="enabled">Diaktifkan</string>
+
+    <string name="info">Info</string>
+    <string name="warning">Peringatan</string>
+    <string name="error">Kesalahan</string>
+    <string name="debug">Debug</string>
+    <string name="silent">Senyap</string>
+
+    <string name="force_enable">Paksa Aktifkan</string>
+
+    <string name="mapping">Pemetaan Real-IP ke domain</string>
+    <string name="fakeip">Pemetaan Fake-IP ke domain</string>
+
+    <string name="blacklist">Daftar Hitam</string>
+    <string name="whitelist">Daftar Putih</string>
+
+    <string name="off">MATI</string>
+    <string name="strict">Ketat</string>
+    <string name="always">Selalu</string>
+
+    <string name="system_apps">Aplikasi Sistem</string>
+    <string name="filter">Filter</string>
+    <string name="package_name">Nama Paket</string>
+    <string name="update_time">Waktu Pembaruan</string>
+    <string name="install_time">Waktu Penginstalan</string>
+    <string name="reverse">Balik</string>
+    <string name="search">Cari</string>
+    <string name="select_all">Pilih Semua</string>
+    <string name="select_invert">Balikkan Pilihan</string>
+    <string name="select_none">Kosongkan Pilihan</string>
+    <string name="import_from_clipboard">Impor dari Papan Klip</string>
+    <string name="export_to_clipboard">Ekspor ke Papan Klip</string>
+
+    <string name="clash_meta_for_android">Bromo VPN</string>
+
+    <string name="document">Dokumen</string>
+    <string name="feedback">Umpan Balik</string>
+    <string name="sources">Sumber</string>
+    <string name="donate">Donasi</string>
+    <string name="clash_wiki">Clash Wiki</string>
+    <string name="github_issues">Masalah Github</string>
+    <string name="google_play">Google Play</string>
+    <string name="clash_meta_core">Clash Meta Core</string>
+    <string name="clash_wiki_url" translatable="false">https://github.com/Dreamacro/clash/wiki</string>
+    <string name="meta_github_url" translatable="false">https://github.com/MetaCubeX/ClashMetaForAndroid</string>
+    <string name="clash_meta_core_url" translatable="false">https://github.com/MetaCubeX/Clash.Meta</string>
+
+    <string name="tips_properties"><![CDATA[Hanya Menerima <strong>Konfigurasi Clash</strong>(termasuk <strong>Proksi</strong>/<strong>Aturan</strong>)]]></string>
+    <string name="tips_help"><![CDATA[Bromo VPN adalah sebuah perangkat lunak <strong>gratis</strong> dan kami <strong>TIDAK</strong> menyediakan layanan apa pun untuk itu]]></string>
+
+    <string name="google_play_url" translatable="false">https://play.google.com/store/apps/details?id=com.github.kr328.clash</string>
+
+    <string name="app">Aplikasi</string>
+    <string name="service">Layanan</string>
+
+    <string name="dark_mode">Mode Gelap</string>
+
+    <string name="show_traffic">Tampilkan Lalu Lintas</string>
+    <string name="show_traffic_summary">Perbarui otomatis lalu lintas di notifikasi</string>
+
+    <string name="follow_system_android_10">Ikuti Sistem (Android 10+)</string>
+    <string name="always_dark">Selalu Gelap</string>
+    <string name="always_light">Selalu Terang</string>
+
+    <string name="tun_stack_mode">Mode Tumpukan</string>
+    <string name="tun_stack_system">Tumpukan Sistem</string>
+    <string name="tun_stack_gvisor">Tumpukan Gvisor</string>
+    <string name="tun_stack_mixed">Tumpukan Campuran</string>
+
+    <string name="allow_all_apps">Izinkan semua aplikasi</string>
+    <string name="allow_selected_apps">Izinkan aplikasi terpilih</string>
+    <string name="deny_selected_apps">Tolak aplikasi terpilih</string>
+
+    <string name="no_profile_selected">Tidak ada profil terpilih</string>
+
+    <string name="layout">Tata Letak</string>
+    <string name="single">Tunggal</string>
+    <string name="doubles">Ganda</string>
+    <string name="multiple">Multi</string>
+    <string name="not_selectable">Tidak dapat dipilih</string>
+
+    <string name="providers">Penyedia</string>
+
+    <string name="files">Berkas</string>
+    <string name="browse_files">Telusuri Berkas</string>
+    <string name="browse_configuration_providers"><![CDATA[Telusuri konfigurasi & penyedia]]></string>
+    <string name="rename">Ubah Nama</string>
+    <string name="file_name">Nama Berkas</string>
+    <string name="invalid_file_name">Nama berkas tidak valid</string>
+
+    <string name="reset_override_settings">Atur Ulang Pengaturan Pengambilalihan</string>
+    <string name="reset_override_settings_message">Semua pengaturan pengambilalihan akan dibuang</string>
+    <string name="key">Kunci</string>
+
+    <string name="use_built_in">Gunakan Bawaan</string>
+    <string name="more">Lebih Banyak</string>
+    <string name="save">Simpan</string>
+    <string name="delay_test">Tes Penundaan</string>
+
+    <string name="format_provider_type">%1$s(%2$s)</string>
+    <string name="rule">Aturan</string>
+    <string name="http">HTTP</string>
+    <string name="inline">Sebaris</string>
+    <string name="compatible">Kompatibel</string>
+    <string name="format_update_provider_failure">Perbarui %1$s: %2$s</string>
+    <string name="update_all">Perbarui Semua</string>
+
+    <string name="close">Tutup</string>
+    <string name="keyword">Kata Kunci</string>
+
+    <string name="invalid_log_file">Berkas log tidak valid</string>
+    <string name="unable_to_start_vpn">Tidak dapat memulai komponen VPN</string>
+
+    <string name="version_updated">Aplikasi Diperbarui</string>
+    <string name="version_updated_tips">Pengaturan telah diatur ulang dan profil lama perlu disimpan kembali.</string>
+
+    <string name="mode_switch_tips">Hanya valid untuk sesi saat ini</string>
+
+    <string name="clash_meta_wiki">Clash Meta Wiki</string>
+    <string name="clash_meta_wiki_url" translatable="false">https://wiki.metacubex.one</string>
+
+    <string name="meta_features">Fitur Meta</string>
+    <string name="unified_delay">Penundaan Bersatu</string>
+    <string name="geodata_mode">Mode Geodata</string>
+    <string name="tcp_concurrent">TCP Konkuren</string>
+    <string name="find_process_mode">Temukan Mode Proses</string>
+
+    <string name="sniffer_setting">Pengaturan Sniffer</string>
+    <string name="sniffer">Sniffer</string>
+    <string name="force_dns_mapping">Paksa Pemetaan DNS</string>
+    <string name="parse_pure_ip">Urai IP Murni</string>
+    <string name="override_destination">Ambil Alih Tujuan</string>
+    <string name="force_domain">Paksa Domain</string>
+    <string name="skip_domain">Lewati Domain</string>
+    <string name="skip_src_address">Lewati Alamat Asal</string>
+    <string name="skip_dst_address">Lewati Alamat Tujuan</string>
+    <string name="sniff_http_ports">Sniff Port HTTP</string>
+    <string name="sniff_tls_ports">Sniff Port TLS</string>
+    <string name="sniff_quic_ports">Sniff Port QUIC</string>
+    <string name="sniff_http_override_destination">Sniff HTTP Ambil Alih Tujuan</string>
+    <string name="sniff_tls_override_destination">Sniff TLS Ambil Alih Tujuan</string>
+    <string name="sniff_quic_override_destination">Sniff QUIC Ambil Alih Tujuan</string>
+
+    <string name="geox_url_setting">Pengaturan Url GeoX</string>
+    <string name="geox_geoip">Url GeoIp</string>
+    <string name="geox_mmdb">Url MMDB</string>
+    <string name="geox_geosite">Url Geosite</string>
+    <string name="geoip_url" translatable="false">https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.dat</string>
+    <string name="mmdb_url" translatable="false">https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/country.mmdb</string>
+    <string name="geosite_url" translatable="false">https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geosite.dat</string>
+    <string name="geox_files">Berkas Geo</string>
+    <string name="import_geoip_file">Impor Database GeoIP</string>
+    <string name="import_geosite_file">Impor Database GeoSite</string>
+    <string name="import_country_file">Impor Database Negara</string>
+    <string name="import_asn_file">Impor Database ASN</string>
+    <string name="press_to_import">Tekan untuk mengimpor...</string>
+    <string name="geofile_import_failed">Impor gagal</string>
+    <string name="geofile_unknown_db_format">Format Database tidak dikenal</string>
+    <string name="geofile_unknown_db_format_message">Hanya %1$s yang didukung</string>
+    <string name="geofile_imported">%1$s diimpor</string>
+    <string name="toast_profile_updated_complete">Pembaruan profil %s selesai</string>
+    <string name="toast_profile_updated_failed">Pembaruan profil %1$s gagal: %2$s</string>
+    <string name="external_control_activity">Pengontrol Eksternal</string>
+    <string name="external_control_started">Layanan Bromo VPN dimulai</string>
+    <string name="external_control_stopped">Layanan Bromo VPN dihentikan</string>
+
+    <string name="hide_app_icon_title">Sembunyikan Ikon Aplikasi</string>
+    <string name="hide_app_icon_desc">Anda dapat memutar *#*#252746382#*#* untuk membuka Aplikasi ini</string>
+    <string name="hide_from_recents_title">Sembunyikan dari Baru-Baru Ini</string>
+    <string name="hide_from_recents_desc">Sembunyikan aplikasi dari layar aplikasi terbaru</string>
+    <string name="import_from_qr_no_permission">Akses kamera dibatasi. Harap aktifkan di Pengaturan.</string>
+    <string name="import_from_qr_exception">Terjadi pengecualian sistem yang tidak tertangani.</string>
+
+    <string name="shortcut_toggle_short">Alihkan Clash</string>
+    <string name="shortcut_toggle_long">Alihkan layanan Clash aktif/nonaktif</string>
+    <string name="shortcut_start_short">Mulai Clash</string>
+    <string name="shortcut_start_long">Mulai layanan Clash</string>
+    <string name="shortcut_stop_short">Hentikan Clash</string>
+    <string name="shortcut_stop_long">Hentikan layanan Clash</string>
+</resources>

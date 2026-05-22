@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="PluralsCandidate">
+    <!-- from https://github.com/shadowsocks/shadowsocks-android/blob/master/core/src/main/res/values/strings.xml -->
+    <string name="clash_notification_content" translatable="false">"%1$s↑\t%2$s↓"</string>
+
+    <string name="clash_service_status_channel">Status Clash</string>
+    <string name="profile_service_status">Status Layanan Profil</string>
+    <string name="profile_process_status">Status Pemrosesan Profil</string>
+    <string name="profile_process_result">Hasil Proses Profil</string>
+    <string name="update_successfully">Pembaruan Berhasil</string>
+    <string name="update_failure">Pembaruan Gagal</string>
+    <string name="format_update_complete">Pembaruan %s selesai</string>
+    <string name="format_update_failure">Pembaruan %1$s: %2$s</string>
+    <string name="running">Berjalan</string>
+    <string name="loading">Memuat</string>
+    <string name="clash_meta_for_android">Bromo VPN</string>
+    <string name="profiles_and_providers">Profil dan Penyedia</string>
+    <string name="configuration_yaml">Configuration.yaml</string>
+    <string name="provider_files">Berkas Penyedia</string>
+    <string name="profile_updater">Pembaruan Profil</string>
+    <string name="profile_updating">Memperbarui Profil</string>
+</resources>
