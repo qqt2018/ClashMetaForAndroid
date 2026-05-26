@@ -54,7 +54,7 @@ abstract class BaseActivity<D : Design<*>> : AppCompatActivity(),
     private var defer: suspend () -> Unit = {}
     private var deferRunning = false
     private val nextRequestKey = AtomicInteger(0)
-    private var dayNight: DayNight = DayNight.Day
+    protected var dayNight: DayNight = DayNight.Day
 
     protected abstract suspend fun main()
 

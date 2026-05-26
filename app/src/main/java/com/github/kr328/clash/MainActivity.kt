@@ -101,9 +101,37 @@ class MainActivity : BaseActivity<MainDesign>() {
         setMode(state.mode)
         setHasProviders(providers.isNotEmpty())
 
-        withProfile {
-            setProfileName(queryActive()?.name)
+        val active = withProfile {
+            queryActive()
         }
+        setProfileName(active?.name)
+
+        val sitenavItems = withContext(Dispatchers.IO) {
+            if (active != null) {
+                val file = filesDir.resolve("imported").resolve(active.uuid.toString()).resolve("config.yaml")
+                com.github.kr328.clash.util.SitenavParser.parse(file)
+            } else {
+                com.github.kr328.clash.util.SitenavParser.DEFAULT_ITEMS
+            }
+        }
+
+        setSitenav(sitenavItems) { item ->
+            try {
+                if (item.openMode == "webview") {
+                    val intent = Intent(this@MainActivity, WebViewActivity::class.java).apply {
+                        putExtra("title", item.name)
+                        putExtra("url", item.url)
+                    }
+                    startActivity(intent)
+                } else {
+                    val intent = Intent(Intent.ACTION_VIEW, android.net.Uri.parse(item.url))
+                    startActivity(intent)
+                }
+            } catch (e: Exception) {
+                // Ignore launcher exceptions
+            }
+        }
+
     }
 
     private suspend fun MainDesign.fetchTraffic() {

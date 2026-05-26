@@ -176,6 +176,11 @@
             android:exported="false"
             android:label="@string/help" />
         <activity
+            android:name=".WebViewActivity"
+            android:configChanges="uiMode"
+            android:exported="false"
+            android:label="Web" />
+        <activity
             android:name=".FilesActivity"
             android:configChanges="uiMode"
             android:exported="false"

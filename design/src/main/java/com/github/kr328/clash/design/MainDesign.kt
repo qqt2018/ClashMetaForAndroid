@@ -66,6 +66,18 @@ class MainDesign(context: Context) : Design<MainDesign.Request>(context) {
         }
     }
 
+    suspend fun setSitenav(
+        items: List<com.github.kr328.clash.design.model.SitenavItem>,
+        onClicked: (com.github.kr328.clash.design.model.SitenavItem) -> Unit
+    ) {
+        withContext(Dispatchers.Main) {
+            val spanCount = if (items.size == 1) 1 else 3
+            binding.sitenavList.layoutManager = androidx.recyclerview.widget.GridLayoutManager(context, spanCount)
+            binding.sitenavList.adapter = com.github.kr328.clash.design.adapter.SitenavAdapter(items, onClicked)
+        }
+    }
+
+
     suspend fun showAbout(versionName: String) {
         withContext(Dispatchers.Main) {
             val binding = DesignAboutBinding.inflate(context.layoutInflater).apply {
