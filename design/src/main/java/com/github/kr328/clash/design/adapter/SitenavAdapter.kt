@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.github.kr328.clash.design.R
 import com.github.kr328.clash.design.model.SitenavItem
+import com.github.kr328.clash.design.util.resolveThemedColor
 
 class SitenavAdapter(
     private val items: List<SitenavItem>,
@@ -55,6 +56,43 @@ class SitenavAdapter(
         val item = items[position]
         holder.name.text = item.name
         
+        val context = holder.itemView.context
+        val card = holder.itemView as com.google.android.material.card.MaterialCardView
+        val density = context.resources.displayMetrics.density
+
+        val isWebview = item.openMode == "webview"
+
+        if (item.span == 12) {
+            if (isWebview) {
+                card.setCardBackgroundColor(0xFF2E7D32.toInt())
+                card.strokeWidth = 0
+                card.cardElevation = 3 * density
+                holder.name.setTextColor(0xFFFFFFFF.toInt())
+            } else {
+                card.setCardBackgroundColor(0x00000000)
+                card.strokeWidth = (1.5f * density).toInt()
+                card.strokeColor = ColorStateList.valueOf(0xFF2E7D32.toInt())
+                card.cardElevation = 0f
+                holder.name.setTextColor(0xFF2E7D32.toInt())
+            }
+        } else {
+            if (isWebview) {
+                val surfaceColor = context.resolveThemedColor(com.google.android.material.R.attr.colorSurface)
+                card.setCardBackgroundColor(surfaceColor)
+                card.strokeWidth = 0
+                card.cardElevation = 2 * density
+                val primaryText = context.resolveThemedColor(android.R.attr.textColorPrimary)
+                holder.name.setTextColor(primaryText)
+            } else {
+                card.setCardBackgroundColor(0x00000000)
+                val primaryColor = context.resolveThemedColor(com.google.android.material.R.attr.colorPrimary)
+                card.strokeWidth = (1.5f * density).toInt()
+                card.strokeColor = ColorStateList.valueOf(primaryColor)
+                card.cardElevation = 0f
+                holder.name.setTextColor(primaryColor)
+            }
+        }
+
         holder.avatar?.let { avatar ->
             avatar.text = item.name.firstOrNull()?.uppercase() ?: ""
             val color = colors[Math.abs(item.name.hashCode()) % colors.size]
