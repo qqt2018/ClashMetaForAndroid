@@ -70,8 +70,8 @@ class SitenavAdapter(
                 holder.name.setTextColor(0xFFFFFFFF.toInt())
             } else {
                 card.setCardBackgroundColor(0x00000000)
-                card.strokeWidth = (1.5f * density).toInt()
-                card.strokeColor = 0xFF2E7D32.toInt()
+                card.strokeWidth = (1.0f * density).toInt()
+                card.strokeColor = 0x4D2E7D32.toInt()
                 card.cardElevation = 0f
                 holder.name.setTextColor(0xFF2E7D32.toInt())
             }
@@ -86,8 +86,8 @@ class SitenavAdapter(
             } else {
                 card.setCardBackgroundColor(0x00000000)
                 val primaryColor = context.resolveThemedColor(com.google.android.material.R.attr.colorPrimary)
-                card.strokeWidth = (1.5f * density).toInt()
-                card.strokeColor = primaryColor
+                card.strokeWidth = (1.0f * density).toInt()
+                card.strokeColor = (primaryColor and 0x00FFFFFF) or 0x4D000000
                 card.cardElevation = 0f
                 holder.name.setTextColor(primaryColor)
             }
