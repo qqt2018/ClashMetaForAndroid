@@ -46,17 +46,20 @@ object SitenavParser {
         var currentName: String? = null
         var currentUrl: String? = null
         var currentOpenMode: String? = null
+        var currentSpan: Int? = null
 
         fun commitCurrent() {
             val name = currentName
             val url = currentUrl
             val openMode = currentOpenMode
+            val span = currentSpan ?: 12
             if (name != null && url != null) {
-                items.add(SitenavItem(name, url, openMode))
+                items.add(SitenavItem(name, url, openMode, span))
             }
             currentName = null
             currentUrl = null
             currentOpenMode = null
+            currentSpan = null
         }
 
         for (i in (sitenavLineIndex + 1) until lines.size) {
@@ -75,12 +78,14 @@ object SitenavParser {
                     if (key == "name") currentName = value
                     if (key == "url") currentUrl = value
                     if (key == "open_mode") currentOpenMode = value
+                    if (key == "span") currentSpan = value.toIntOrNull()
                 }
             } else {
                 parseKeyValuePair(trimmed)?.let { (key, value) ->
                     if (key == "name") currentName = value
                     if (key == "url") currentUrl = value
                     if (key == "open_mode") currentOpenMode = value
+                    if (key == "span") currentSpan = value.toIntOrNull()
                 }
             }
         }

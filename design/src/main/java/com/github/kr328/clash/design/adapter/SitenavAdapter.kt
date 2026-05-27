@@ -38,7 +38,7 @@ class SitenavAdapter(
     }
 
     override fun getItemViewType(position: Int): Int {
-        return if (items.size == 1) VIEW_TYPE_SINGLE else VIEW_TYPE_GRID
+        return if (items[position].span == 12) VIEW_TYPE_SINGLE else VIEW_TYPE_GRID
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {

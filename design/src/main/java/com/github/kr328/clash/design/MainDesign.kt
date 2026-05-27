@@ -71,8 +71,13 @@ class MainDesign(context: Context) : Design<MainDesign.Request>(context) {
         onClicked: (com.github.kr328.clash.design.model.SitenavItem) -> Unit
     ) {
         withContext(Dispatchers.Main) {
-            val spanCount = if (items.size == 1) 1 else 3
-            binding.sitenavList.layoutManager = androidx.recyclerview.widget.GridLayoutManager(context, spanCount)
+            val gridLayoutManager = androidx.recyclerview.widget.GridLayoutManager(context, 12)
+            gridLayoutManager.spanSizeLookup = object : androidx.recyclerview.widget.GridLayoutManager.SpanSizeLookup() {
+                override fun getSpanSize(position: Int): Int {
+                    return items[position].span
+                }
+            }
+            binding.sitenavList.layoutManager = gridLayoutManager
             binding.sitenavList.adapter = com.github.kr328.clash.design.adapter.SitenavAdapter(items, onClicked)
         }
     }
