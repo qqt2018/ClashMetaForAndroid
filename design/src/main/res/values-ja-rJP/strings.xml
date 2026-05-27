@@ -253,4 +253,10 @@
     <string name="override_destination">Override Destination</string>
     <string name="import_from_qr_no_permission">カメラのアクセスが制限されています。設定から有効にしてください。</string>
     <string name="import_from_qr_exception">システムで予期しない例外が発生しました。</string>
+    <string name="shortcut_toggle_short">VPN切替</string>
+    <string name="shortcut_toggle_long">VPNサービスの起動・停止を切り替える</string>
+    <string name="shortcut_start_short">VPN起動</string>
+    <string name="shortcut_start_long">VPNサービスを起動</string>
+    <string name="shortcut_stop_short">VPN停止</string>
+    <string name="shortcut_stop_long">VPNサービスを停止</string>
 </resources>

@@ -317,4 +317,10 @@
     <string name="override_destination">Override Destination</string>
     <string name="import_from_qr_no_permission">Доступ к камере ограничен. Разрешите его в настройках.</string>
     <string name="import_from_qr_exception">Произошла не обрабатываемая системная ошибка.</string>
+    <string name="shortcut_toggle_short">Переключить VPN</string>
+    <string name="shortcut_toggle_long">Переключить службу VPN</string>
+    <string name="shortcut_start_short">Запустить VPN</string>
+    <string name="shortcut_start_long">Запустить службу VPN</string>
+    <string name="shortcut_stop_short">Остановить VPN</string>
+    <string name="shortcut_stop_long">Остановить службу VPN</string>
 </resources>

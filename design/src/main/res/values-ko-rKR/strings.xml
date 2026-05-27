@@ -253,4 +253,10 @@
     <string name="override_destination">Override Destination</string>
     <string name="import_from_qr_no_permission">카메라 접근이 제한되었습니다. 설정에서 허용해 주세요.</string>
     <string name="import_from_qr_exception">처리되지 않은 시스템 예외가 발생했습니다.</string>
+    <string name="shortcut_toggle_short">VPN 전환</string>
+    <string name="shortcut_toggle_long">VPN 서비스 켜기/끄기 전환</string>
+    <string name="shortcut_start_short">VPN 시작</string>
+    <string name="shortcut_start_long">VPN 서비스 시작</string>
+    <string name="shortcut_stop_short">VPN 중지</string>
+    <string name="shortcut_stop_long">VPN 서비스 중지</string>
 </resources>

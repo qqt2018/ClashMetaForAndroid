@@ -239,4 +239,10 @@
     <string name="import_from_qr">Nhập từ Mã QR</string>
     <string name="import_from_qr_no_permission">Quyền truy cập camera bị hạn chế. Vui lòng bật trong Cài đặt.</string>
     <string name="import_from_qr_exception">Đã xảy ra ngoại lệ hệ thống không xử lý được.</string>
+    <string name="shortcut_toggle_short">Bật/Tắt VPN</string>
+    <string name="shortcut_toggle_long">Bật/Tắt dịch vụ VPN</string>
+    <string name="shortcut_start_short">Khởi chạy VPN</string>
+    <string name="shortcut_start_long">Khởi chạy dịch vụ VPN</string>
+    <string name="shortcut_stop_short">Dừng VPN</string>
+    <string name="shortcut_stop_long">Dừng dịch vụ VPN</string>
 </resources>
