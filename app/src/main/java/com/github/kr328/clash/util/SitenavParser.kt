@@ -52,7 +52,7 @@ object SitenavParser {
             val name = currentName
             val url = currentUrl
             val openMode = currentOpenMode
-            val span = currentSpan ?: 12
+            val span = currentSpan ?: 4
             if (name != null && url != null) {
                 items.add(SitenavItem(name, url, openMode, span))
             }

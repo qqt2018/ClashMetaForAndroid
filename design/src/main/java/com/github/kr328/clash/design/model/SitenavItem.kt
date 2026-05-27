@@ -4,6 +4,6 @@ data class SitenavItem(
     val name: String,
     val url: String,
     val openMode: String? = null,
-    val span: Int = 12
+    val span: Int = 4
 )
 
