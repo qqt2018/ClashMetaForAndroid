@@ -61,6 +61,7 @@ class SitenavAdapter(
         val density = context.resources.displayMetrics.density
 
         val isWebview = item.openMode == "webview"
+        val itemColor = colors[Math.abs(item.name.hashCode()) % colors.size]
 
         if (item.span == 12) {
             if (isWebview) {
@@ -77,26 +78,32 @@ class SitenavAdapter(
             }
         } else {
             if (isWebview) {
-                val surfaceColor = context.resolveThemedColor(com.google.android.material.R.attr.colorSurface)
-                card.setCardBackgroundColor(surfaceColor)
+                card.setCardBackgroundColor(itemColor)
                 card.strokeWidth = 0
                 card.cardElevation = 2 * density
-                val primaryText = context.resolveThemedColor(android.R.attr.textColorPrimary)
-                holder.name.setTextColor(primaryText)
+                holder.name.setTextColor(0xFFFFFFFF.toInt())
+                
+                holder.avatar?.let { avatar ->
+                    avatar.setTextColor(itemColor)
+                    avatar.backgroundTintList = ColorStateList.valueOf(0xFFFFFFFF.toInt())
+                }
             } else {
                 card.setCardBackgroundColor(0x00000000)
-                val primaryColor = context.resolveThemedColor(com.google.android.material.R.attr.colorPrimary)
                 card.strokeWidth = (1.0f * density).toInt()
-                card.strokeColor = (primaryColor and 0x00FFFFFF) or 0x4D000000
+                val borderCol = (itemColor and 0x00FFFFFF) or 0x4D000000
+                card.strokeColor = borderCol
                 card.cardElevation = 0f
-                holder.name.setTextColor(primaryColor)
+                holder.name.setTextColor(itemColor)
+                
+                holder.avatar?.let { avatar ->
+                    avatar.setTextColor(0xFFFFFFFF.toInt())
+                    avatar.backgroundTintList = ColorStateList.valueOf(itemColor)
+                }
             }
         }
 
         holder.avatar?.let { avatar ->
             avatar.text = item.name.firstOrNull()?.uppercase() ?: ""
-            val color = colors[Math.abs(item.name.hashCode()) % colors.size]
-            avatar.backgroundTintList = ColorStateList.valueOf(color)
         }
 
         holder.itemView.setOnClickListener {
