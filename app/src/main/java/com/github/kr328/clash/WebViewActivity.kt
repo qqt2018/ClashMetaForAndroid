@@ -11,8 +11,12 @@ import com.github.kr328.clash.design.ui.DayNight
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.withContext
+import kotlinx.coroutines.launch
+import androidx.activity.result.contract.ActivityResultContracts
 
 class WebViewActivity : BaseActivity<WebviewDesign>() {
+    private var filePathCallback: android.webkit.ValueCallback<Array<android.net.Uri>>? = null
+
     override suspend fun main() {
         val titleStr = intent.getStringExtra("title") ?: "Web"
         title = titleStr
@@ -109,6 +113,38 @@ class WebViewActivity : BaseActivity<WebviewDesign>() {
                             findViewById<android.widget.TextView>(com.github.kr328.clash.design.R.id.activity_bar_title_view)?.text = title
                         }
                         jsInjector(view)
+                    }
+
+                    override fun onShowFileChooser(
+                        webView: WebView?,
+                        filePathCallback: android.webkit.ValueCallback<Array<android.net.Uri>>?,
+                        fileChooserParams: FileChooserParams?
+                    ): Boolean {
+                        if (filePathCallback == null) return false
+
+                        this@WebViewActivity.filePathCallback?.onReceiveValue(null)
+                        this@WebViewActivity.filePathCallback = filePathCallback
+
+                        val intent = fileChooserParams?.createIntent() ?: android.content.Intent(android.content.Intent.ACTION_GET_CONTENT).apply {
+                            type = "*/*"
+                            addCategory(android.content.Intent.CATEGORY_OPENABLE)
+                        }
+
+                        this@WebViewActivity.launch {
+                            try {
+                                val result = this@WebViewActivity.startActivityForResult(
+                                    ActivityResultContracts.StartActivityForResult(),
+                                    intent
+                                )
+                                val results = android.webkit.WebChromeClient.FileChooserParams.parseResult(result.resultCode, result.data)
+                                this@WebViewActivity.filePathCallback?.onReceiveValue(results)
+                            } catch (e: Exception) {
+                                this@WebViewActivity.filePathCallback?.onReceiveValue(null)
+                            } finally {
+                                this@WebViewActivity.filePathCallback = null
+                            }
+                        }
+                        return true
                     }
                 }
 
@@ -248,5 +284,11 @@ class WebViewActivity : BaseActivity<WebviewDesign>() {
                 activity.finish()
             }
         }
+    }
+
+    override fun onDestroy() {
+        filePathCallback?.onReceiveValue(null)
+        filePathCallback = null
+        super.onDestroy()
     }
 }
