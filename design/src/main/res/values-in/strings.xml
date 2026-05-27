@@ -351,12 +351,12 @@
     <string name="import_from_qr_no_permission">Akses kamera dibatasi. Harap aktifkan di Pengaturan.</string>
     <string name="import_from_qr_exception">Terjadi pengecualian sistem yang tidak tertangani.</string>
 
-    <string name="shortcut_toggle_short">Alihkan Clash</string>
-    <string name="shortcut_toggle_long">Alihkan layanan Clash aktif/nonaktif</string>
-    <string name="shortcut_start_short">Mulai Clash</string>
-    <string name="shortcut_start_long">Mulai layanan Clash</string>
-    <string name="shortcut_stop_short">Hentikan Clash</string>
-    <string name="shortcut_stop_long">Hentikan layanan Clash</string>
+    <string name="shortcut_toggle_short">Alihkan VPN</string>
+    <string name="shortcut_toggle_long">Alihkan layanan VPN aktif/nonaktif</string>
+    <string name="shortcut_start_short">Mulai VPN</string>
+    <string name="shortcut_start_long">Mulai layanan VPN</string>
+    <string name="shortcut_stop_short">Hentikan VPN</string>
+    <string name="shortcut_stop_long">Hentikan layanan VPN</string>
 
     <string name="sitenav_title">Navigasi Website</string>
 </resources>
